@@ -1,0 +1,11 @@
+{
+    "name": "Nodejs-practice",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "module",
+    "scripts": {
+        "name":"node server.js"
+    },
+    "dependencies":{}
+    
+}
