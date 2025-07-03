@@ -1,3 +1,4 @@
+NOTES:
 - module = every file in the node application is considered a module  
 - in js it's "WINDOWS" and in nodejs it's "GLOBAL"  
 - variables and functions we define in that file or the module are scoped to that file  
