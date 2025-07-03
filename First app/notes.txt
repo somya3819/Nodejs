@@ -1,0 +1,36 @@
+- module = every file in the node application is considered a module  
+- in js it's "WINDOWS" and in nodejs it's "GLOBAL"  
+- variables and functions we define in that file or the module are scoped to that file  
+- in OOP we say they are private, they are not available outside that container/module  
+- if you want to use a variable or function defined in a module outside that module you need to explicitly export it and make it public  
+- every node application has at least one file or one module which we call the main module  
+- the module object may appear to be Global but actually it's not Global  
+- in node every file is a module and the variables and functions defined in that file are scoped to that module  
+- they're not available outside of that module  
+- to create a module, we define variables and functions in a file  
+- to make them available outside, we add them to module.exports  
+- to load a module, we use the require() function  
+- require() returns the object exported from the target module  
+- it's better to store the result of require() in a constant to prevent accidental overwrites  
+- sometimes we may export only a single function instead of an object  
+- node wraps each module's code in a function called the module wrapper function  
+- this function provides require, module, exports, __filename, and __dirname  
+- path module provides utilities for working with file and directory paths  
+- path.parse() can parse a file path into an object with useful properties  
+- os module provides information about the operating system  
+- os.totalmem() and os.freemem() give memory information  
+- fs module provides file system operations  
+- fs methods come in synchronous and asynchronous forms  
+- prefer asynchronous methods as they are non-blocking  
+- fs.readdir() can read directory contents  
+- events module provides the EventEmitter class  
+- EventEmitter allows raising and handling custom events  
+- emit() raises an event, on() registers a listener  
+- we can pass event arguments when emitting events  
+- in real applications, we extend EventEmitter to create custom classes  
+- http module allows creating web servers  
+- http.createServer() returns a server object that is an EventEmitter  
+- server.listen() starts the server on a specified port  
+- the server can handle requests and send responses  
+- for building web applications, frameworks like Express are preferred over raw http module  
+- Express is built on top of the http module and provides better routing structure
