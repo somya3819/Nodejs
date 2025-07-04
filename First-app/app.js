@@ -26,8 +26,6 @@
 
 
 
-
-
 //-----------------------------------------//
 ////IMPORTING MODULES
 // const math = require('./logger.js');
@@ -145,3 +143,6 @@
 
 
 
+
+
+//EXTENDING EVENT_EMITTER
