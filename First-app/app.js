@@ -27,7 +27,7 @@
 
 
 //-----------------------------------------//
-////IMPORTING MODULES
+////IMPORTING MODULES     =       (logger.js)
 // const math = require('./logger.js');
 // console.log(math.add(2,3));
 
@@ -35,7 +35,7 @@
 
 
 //-----------------------------------------//
-////Es molde - for ES module make sure u add "type": "module", in the package
+////Es molde - for ES module make sure u add "type": "module", in the package               =       (logger.js)
 // import {add} from './logger.js'
 // console.log(add(2,3))
 
@@ -145,4 +145,12 @@
 
 
 
-//EXTENDING EVENT_EMITTER
+//EXTENDING EVENT_EMITTER                    =       (logger.js)
+const Logger=require('./logger')
+const logger=new Logger()
+
+logger.on('messagelogged',(arg)=>{
+    console.log('listener called' ,arg)
+})
+
+logger.log('message')
