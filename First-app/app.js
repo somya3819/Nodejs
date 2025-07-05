@@ -125,7 +125,7 @@
 
 
 //-----------------------------------------//
-//EVENGT ARGUMENTS
+//EVENT ARGUMENTS
 // const EventEmitter=require('events')
 // const emitter=new EventEmitter()
 
@@ -146,11 +146,44 @@
 
 
 //EXTENDING EVENT_EMITTER                    =       (logger.js)
-const Logger=require('./logger')
-const logger=new Logger()
+// const Logger=require('./logger')
+// const logger=new Logger()
 
-logger.on('messagelogged',(arg)=>{
-    console.log('listener called' ,arg)
-})
+// logger.on('messagelogged',(arg)=>{
+//     console.log('listener called' ,arg)
+// })
 
-logger.log('message')
+// logger.log('message')
+
+
+
+
+
+
+
+//-----------------------------//
+//HTTP MODULES 
+//-used for creating network in applications
+//-with this we can easily create the backend service for a web applications
+//pres ctr+c to exit
+const http=require('http')
+
+const server=http.createServer(function(req,res){
+    if(req.url==='/'){
+        res.write('hello somya')
+        res.end()
+    }
+    if(req.url==='/api/courses'){
+        res.write(JSON.stringify([1,2,3]))
+        res.end()
+    }
+})          //with this we can create a webserver
+                                        //this server here is an eventEmitter , so it has alll the properties of the event emitter that we sar earlier
+
+
+server.listen(3000)
+console.log('listening on port 3000...')
+
+
+
+//-----------------DONE--------------------------//

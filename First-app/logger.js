@@ -31,15 +31,15 @@
 
 
 //Extending EvenetEmiter                            =       (logger.js)
-const EventEmitter=require('events');
+// const EventEmitter=require('events');
 
-class Logger extends EventEmitter{
- log(message){      //when a function is inside a class , we don't have to write function in the begining and it becomes method
-    console.log(message)
+// class Logger extends EventEmitter{
+//  log(message){      //when a function is inside a class , we don't have to write function in the begining and it becomes method
+//     console.log(message)
 
-    //raising an event
-this.emit('messagelogged' , {id:1 , url:'http://'});
-}
-}
+//     //raising an event
+// this.emit('messagelogged' , {id:1 , url:'http://'});
+// }
+// }
 
-module.exports=Logger
+// module.exports=Logger
