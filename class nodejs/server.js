@@ -7,6 +7,8 @@ console.log("hello somya")
 // console.log(math.add(2,3));
 
 
+
 //ES module
 import {add} from './math.js'
 console.log(add(2,3))
+
