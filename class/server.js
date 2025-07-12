@@ -22,8 +22,8 @@
 
 //try-catch block only handles synchronous exceptions
 //promises handles asynchronous exceptions
-throw new Error('this is an uncaught exception')
-Process.on('uncaughtException' , (err)=>{
-    console.log('uncaught Exception' ,err.message)
-    Process.exit()
-})
+// throw new Error('this is an uncaught exception')
+// Process.on('uncaughtException' , (err)=>{
+//     console.log('uncaught Exception' ,err.message)
+//     Process.exit()
+// })
