@@ -1,0 +1,4 @@
+data from file1 -> copy to file2
+
+//1 way - fs.readfile and fs.writeFile
+//2 way - streams and buffers 
